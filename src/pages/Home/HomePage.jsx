@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { selectUser, selectIsLoggedIn } from "../../redux/auth/selectors";
 import { useSelector } from "react-redux";
 import { Section } from "../../components/Section/Section";
