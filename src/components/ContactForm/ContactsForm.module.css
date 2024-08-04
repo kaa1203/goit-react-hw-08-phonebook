@@ -1,0 +1,43 @@
+.contactForm {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   width: 700px;
+   margin: 0 auto;
+   border: 1px solid rgb(139, 127, 127);
+   border-radius: 4px;
+   padding: 25px;
+   background-color: #f8e2e2e3;
+}
+
+.inputWrapper {
+   width: 100%;
+}
+
+.formInput {
+   margin-top: 10px;
+}
+
+.formInput:focus {
+   outline-color: #eeb2b2;
+}
+
+.formInput,
+.formButton {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid;
+   border-radius: 4px;
+}
+
+.formButton:hover,
+.formButton:focus {
+   background-color: #eeb2b2;
+   box-shadow: 0 0 8px 4px #ffcfcf;
+   border: 1px solid white;
+   color: white;
+   cursor: pointer;
+   outline: none;
+}
