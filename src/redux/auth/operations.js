@@ -20,6 +20,7 @@ export const addAccount = createAsyncThunk(
          setAuthHeader(res.data.token);
          return res.data;
       } catch (e) {
+         alert("Invalid email! It's either already taken or you have the wrong format!");
          return thunkAPI.rejectWithValue(e.message);
       }
   } 
@@ -34,6 +35,7 @@ export const login = createAsyncThunk(
          setAuthHeader(res.data.token);
          return res.data;
       } catch (e) {
+         alert("Wrong email or password!");
          return thunkAPI.rejectWithValue(e.message);
       }
    }

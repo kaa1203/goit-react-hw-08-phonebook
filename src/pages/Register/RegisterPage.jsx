@@ -27,11 +27,11 @@ export const RegisterPage = () => {
 
       if (name.value === "" || email.value === "" || 
           pword.value === "" || repWord.value === "") {
-         return console.log("Enter all the fields!");
+         return alert("Enter all the fields!");
       }
 
       if (pword.value !== repWord.value) {
-         return console.log("Password doesn't match");
+         return alert("Password doesn't match");
       }
 
       const data = {
